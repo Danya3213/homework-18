@@ -1,6 +1,9 @@
 import {useRef} from "react";
+import {useFeedbackInfo} from "./FeedbackInfo.jsx";
 
-export default ({good, neutral, bad, setGood, setNeutral, setBad}) => {
+export default () => {
+
+    const {good, neutral, bad, setGood, setNeutral, setBad} = useFeedbackInfo();
 
     const button1 = useRef(null)
     const button2 = useRef(null)

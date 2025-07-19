@@ -1,6 +1,8 @@
-export default ({statistics}) => {
+import {useFeedbackInfo} from "./FeedbackInfo.jsx";
 
-    const {good, neutral, bad} = statistics;
+export default () => {
+
+    const {good, neutral, bad, setGood, setNeutral, setBad} = useFeedbackInfo();
 
     return (
         <>
