@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 500;
+  list-style: none;
+  color: #ffffffd3;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  background-color: #242424;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 60px;
+
+    &--middle {
+      font-weight: 600;
+      font-size: 40px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-inline: 20px;
+
+    &--statistics {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-inline: 20px;
+    }
+  }
+
+  &__list-item {
+
+    text-align: left;
+  }
+
+  &__item {
+
+    &-button {
+      border: 1px solid #ffffffd3;
+      font-size: 30px;
+      transition: all ease-in-out 0.15s;
+      cursor: pointer;
+      padding: 10px 30px;
+      background-color: #222222;
+      width: 100%;
+      border-radius: 10px;
+
+      &:hover {
+        color: #ffffffa0;
+        background-color: #323232;
+      }
+
+      &:active {
+        color: #ffffff78;
+        background-color: #333333;
+
+        &:not(:hover) {
+          color: #ffffffa0;
+          background-color: #323232;
+        }
+      }
+
+      &:focus {
+        color: rgba(255, 255, 255, 0.5);
+        background-color: #282828;
+      }
+    }
+  }
+}
